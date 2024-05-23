@@ -33,3 +33,15 @@ class TV():
         if 1 <= volume <= 7:
             self.volume = volume
     
+    #add different instance methods for setting the minimum and maximum channels and volumes
+    def channelUp(self):
+        self.channel = min(120, self.channel)
+    
+    def channelDown(self):
+        self.channel = max(1, self.channel)
+    
+    def volumeUp(self):
+        self.volume = min(7, self.volume + 1)
+    
+    def volumeDown(self):
+        self.volume = max(1, self.volume - 1)
