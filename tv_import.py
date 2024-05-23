@@ -16,4 +16,9 @@ def main():
     tv_two.setChannel(3)
     tv_two.setVolume(2)
     tv_two.channel.Up()
+
+    #output
+    print("\n")
+    print(f"{tv_one.name}'s channel is {tv_one.getChannel()} and volume level is {tv_one.getVolume()}")
+    print(f"{tv_two.name}'s channel is {tv_two.getChannel()} and volume level is {tv_two.getVolume()}\n")
     
