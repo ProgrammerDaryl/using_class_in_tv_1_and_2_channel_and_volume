@@ -6,4 +6,12 @@ class TV():
         self.channel = channel = 1
         self.volume = volume = 1
         self.power = False
+
+    #add instance method for power on
+    def turnOn(self):
+        self.is_on = True
+
+    #add instance method for power off
+    def turnOff(self):
+        self.is_on = False
     
