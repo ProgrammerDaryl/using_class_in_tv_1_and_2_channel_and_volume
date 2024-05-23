@@ -18,9 +18,14 @@ def main():
     tv2.channelUp()
 
     #output
-    print("\n")
-    print(f"{tv1.name}'s channel is {tv1.getChannel()} and volume level is {tv1.getVolume()}")
-    print(f"{tv2.name}'s channel is {tv2.getChannel()} and volume level is {tv2.getVolume()}\n")
+    import pyfiglet
+    from colorama import Fore
+
+    tv1_styled = pyfiglet.figlet_format(f"\n{tv1.name}'s channel is {tv1.getChannel()} and volume level is {tv1.getVolume()}", font = "doom")
+    print(Fore.CYAN + tv1_styled + Fore.RESET)
+
+    tv2_styled = pyfiglet.figlet_format(f"{tv2.name}'s channel is {tv2.getChannel()} and volume level is {tv2.getVolume()}", font = "doom")
+    print(Fore.RED + tv2_styled + Fore.RESET)
 
 if __name__ == "__main__":
     main()
