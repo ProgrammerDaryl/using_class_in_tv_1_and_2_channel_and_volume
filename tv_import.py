@@ -11,3 +11,9 @@ def main():
     tv_one.setVolume(3)
     tv_one.channelUp()
 
+    #operations for TV2
+    tv_two.turnOn()
+    tv_two.setChannel(3)
+    tv_two.setVolume(2)
+    tv_two.channel.Up()
+    
