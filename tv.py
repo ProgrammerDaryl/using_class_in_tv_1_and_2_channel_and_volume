@@ -1,9 +1,9 @@
 #make a blueprint
 class TV():
     #add data members (instance variables)
-    def __init__(self, channel=1, volume=1):
+    def __init__(self, name):
+        self.name = name
+        self.channel = channel = 1
+        self.volume = volume = 1
         self.power = False
-        self.channel = channel
-        self.volume = volume
     
-        
