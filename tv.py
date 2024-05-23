@@ -23,6 +23,8 @@ class TV:
     def setChannel(self, channel):
         if 1 <= channel <= 120:
             self.channel = channel
+        else:
+            print("Invalid channel number! Channel must be between 1 and 20 only!")
     
     #add instance method for getting volume
     def getVolume(self):
@@ -32,6 +34,8 @@ class TV:
     def setVolume(self, volume):
         if 1 <= volume <= 7:
             self.volume = volume
+        else:
+            print("Invalid volume level! The volume level must be between 1 and 7 only!")
     
     #add different instance methods for setting the minimum and maximum channels and volumes
     def channelUp(self):
